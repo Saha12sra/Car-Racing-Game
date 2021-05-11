@@ -73,32 +73,127 @@ function my_keydown(e){
     }
 }
 
-window.addEventListener("keydown2", my_keydown2);
+window.addEventListener("keydown", my_keydown2);
 
 function my_keydown2(e){
 
-    key_pressed=e.keyCode;
-    console.log(key_pressed);
+    key_pressed2=e.keyCode;
+    console.log(key_pressed2);
     
    
-    if(key_pressed=='w'){
+    if(key_pressed2=='87'){
         console.log("car2 going up");
         car2_up();
     }
     
-    if(key_pressed=='s'){
+    if(key_pressed2=='83'){
         console.log("car2 going down");
         car2_down();
     }
 
-    if(key_pressed=='a'){
+    if(key_pressed2=='65'){
         console.log("car2 going left");
         car2_left();
     }
 
-    if(key_pressed=='d'){
+    if(key_pressed2=='68'){
         console.log("car2 going right");
         car2_right();
+    }
+}
+function car1_up(){
+
+    if(car1_y >=10){
+
+        car1_y-=10;
+        console.log("car1_y when up is pressed"+car1_y);
+        uploadbg();
+        uploadbg1();
+        uploadbg2();
+    }
+}
+
+function car1_down(){
+
+    if(car1_y <=400){
+
+        car1_y+=10;
+        console.log("car1_y when down is pressed"+car1_y);
+        uploadbg();
+        uploadbg1();
+        uploadbg2();
+    }
+}
+
+function car1_left(){
+
+    if(car1_x >=10){
+
+        car1_x-=10;
+        console.log("car1_x when left is pressed"+car1_x);
+        uploadbg();
+        uploadbg1();
+        uploadbg2();
+    }
+}
+
+function car1_right(){
+
+    if(car1_x <=500){
+
+        car1_x+=10;
+        console.log("car1_x when right is pressed"+car1_x);
+        uploadbg();
+        uploadbg1();
+        uploadbg2();
+    }
+}
+
+function car2_up(){
+
+    if(car2_y >=10){
+
+        car2_y-=10;
+        console.log("car2_y when w is pressed"+car2_y);
+        uploadbg();
+        uploadbg1();
+        uploadbg2();
+    }
+}
+
+function car2_down(){
+
+    if(car2_y <=400){
+
+        car2_y+=10;
+        console.log("car2_y when s is pressed"+car2_y);
+        uploadbg();
+        uploadbg1();
+        uploadbg2();
+    }
+}
+
+function car2_left(){
+
+    if(car2_x >=10){
+
+        car2_x-=10;
+        console.log("car2_x when a is pressed"+car2_x);
+        uploadbg();
+        uploadbg1();
+        uploadbg2();
+    }
+}
+
+function car2_right(){
+
+    if(car2_x <=500){
+
+        car2_x+=10;
+        console.log("car2_x when d is pressed"+car2_x);
+        uploadbg();
+        uploadbg1();
+        uploadbg2();
     }
 }
 
