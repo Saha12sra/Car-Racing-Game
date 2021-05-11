@@ -1,17 +1,17 @@
 canvas=document.getElementById("myCanvas");
 ctx=canvas.getContext("2d");
 
-car1_height=60;
-car1_width=100;
+car1_height=50;
+car1_width=130;
 
-car2_height=60;
-car2_width=100;
+car2_height=50;
+car2_width=130;
 
-car1_x=100;
-car1_y=100;
+car1_x=30;
+car1_y=30;
 
-car2_x=100;
-car2_y=200;
+car2_x=30;
+car2_y=100;
 
 background_img="racing.jpeg";
 car1_img="blue_car.png";
